@@ -4,6 +4,7 @@ class HelloWorld
     // Prints "Hello, World" to the terminal window. 
     public static final int myage = 15;
     public final int yourage = 20;
+    
 
     public static void main(String args[]) 
     { 
@@ -12,6 +13,10 @@ class HelloWorld
 
         if(yourage > 15)
             System.out.println("I am younger than you");
+        
+        String mystring = "Bull - Dog";
+        System.out.println(mystring);
+        
     } 
 } 
 
