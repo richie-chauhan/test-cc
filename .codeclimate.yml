@@ -1,0 +1,11 @@
+plugins:
+  sonar-java:
+    enabled: true
+    config:
+      minimum_severity: minor
+  pmd:
+    enabled: true
+    config:
+      rules:
+        - "java-basic"
+        - "java-design"
