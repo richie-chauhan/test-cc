@@ -1,27 +1,30 @@
-class HelloWorld 
-{ 
-    // Your program begins with a call to main(). 
-    // Prints "Hello, World" to the terminal window. 
-    public static final int myage = 15;
-    public final int yourage = 20;
-    
+/******************************************************************************
+ *  Compilation:  javac HelloWorld.java
+ *  Execution:    java HelloWorld
+ *
+ *  Prints "Hello, World". By tradition, this is everyone's first program.
+ *
+ *  % java HelloWorld
+ *  Hello, World
+ *
+ *  These 17 lines of text are comments. They are not part of the program;
+ *  they serve to remind us about its properties. The first two lines tell
+ *  us what to type to compile and test the program. The next line describes
+ *  the purpose of the program. The next few lines give a sample execution
+ *  of the program and the resulting output. We will always include such
+ *  lines in our programs and encourage you to do the same.
+ *
+ ******************************************************************************/
 
-    public static void main(String args[]) 
-    { 
-        System.out.println("Hello, World");
-        System.out.println("Hello, World");
+public class HelloWorld {
 
-        if(yourage > 15)
-            System.out.println("I am younger than you");
-        
-        String mystring = "Bull - Dog";
-        System.out.println(mystring);
-        
-        String dailing = "Should be dialing - if it would just catch this";
-        if (yourage <= 15) {
-            System.out.println(dailing);
+    public static void main(String[] args) {
+        // Prints "Hello, World" to the terminal window.
+        System.out.println("Hello, World");
+String myString = null;
+
+System.out.println("Equal? " + myString.equals("foo"));                        // Noncompliant; will raise a NPE
+System.out.println("Equal? " + (myString != null && myString.equals("foo")));  // Noncompliant; null check could be removed
         }
-        
-    } 
-} 
 
+}
